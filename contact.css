@@ -1,0 +1,107 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: #fff;
+    margin: 0;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+  }
+
+  .contact-container {
+    background: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgb(0 0 0 / 0.1);
+    padding: 40px 50px;
+    max-width: 450px;
+    width: 100%;
+  }
+
+  .contact-container h2 {
+    font-weight: 700;
+    font-size: 1.9rem;
+    margin-bottom: 40px;
+  }
+
+  .highlight {
+    color: #337aff;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  input, textarea {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    padding: 12px 15px 12px 45px; /* space for icon */
+    border-radius: 12px;
+    border: 1px solid #ddd;
+    outline: none;
+    transition: border-color 0.3s ease;
+    background-repeat: no-repeat;
+    background-position: 15px center;
+    background-size: 18px 18px;
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    color: #999;
+  }
+
+  input:focus,
+  textarea:focus {
+    border-color: #337aff;
+  }
+
+  /* Icons as SVG data URLs */
+  input[name="name"], input[placeholder="Name"] {
+    background-image: url('data:image/svg+xml;utf8,<svg fill="%23999" height="18" viewBox="0 0 24 24" width="18" xmlns="http://www.w3.org/2000/svg"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg>');
+  }
+
+  input[type="tel"], input[placeholder="Phone"] {
+    background-image: url('data:image/svg+xml;utf8,<svg fill="%23999" height="18" viewBox="0 0 24 24" width="18" xmlns="http://www.w3.org/2000/svg"><path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.27c1.21.49 2.53.76 3.88.76a1 1 0 011 1V20a1 1 0 01-1 1c-9.39 0-17-7.61-17-17a1 1 0 011-1h3.5a1 1 0 011 1c0 1.35.26 2.67.76 3.88a1 1 0 01-.27 1.11l-2.2 2.2z"/></svg>');
+  }
+
+  input[type="email"], input[placeholder="Email Address"] {
+    background-image: url('data:image/svg+xml;utf8,<svg fill="%23999" height="18" viewBox="0 0 24 24" width="18" xmlns="http://www.w3.org/2000/svg"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 2v.01L12 13 4 6.01V6h16zM4 18v-9l8 7 8-7v9H4z"/></svg>');
+  }
+
+  input[placeholder="Subject"] {
+    background-image: url('data:image/svg+xml;utf8,<svg fill="%23999" height="18" viewBox="0 0 24 24" width="18" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6zm0 4h12v2H3v-2zm0 4h18v2H3v-2z"/></svg>');
+  }
+
+  textarea {
+    background-image: url('data:image/svg+xml;utf8,<svg fill="%23999" height="18" viewBox="0 0 24 24" width="18" xmlns="http://www.w3.org/2000/svg"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg>');
+  }
+
+  textarea {
+    resize: vertical;
+    min-height: 90px;
+  }
+
+  button {
+    background-color: #6b7575;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 12px;
+    padding: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  button:hover {
+    background-color: #4a5252;
+  }
+  .back{
+    text-align: center;
+  }
+  h1{
+    text-align: center;
+  }
